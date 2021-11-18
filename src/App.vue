@@ -15,21 +15,68 @@
       </div>
     </div>
 
+    <search/>
+
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">순번</th>
+        <th scope="col">제목</th>
+        <th scope="col">작성자</th>
+        <th scope="col">작성일</th>
+        <th scope="col">조회수</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry the Bird</td>
+        <td>@mdo</td>
+        <td>@twitter</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Larry the Bird</td>
+        <td>@mdo</td>
+        <td>@twitter</td>
+        <td>@mdo</td>
+      </tr>
+      </tbody>
+    </table>
+
     <div class="black-bg" v-if="모달창열였다==true">
       <div class="white-bg">
-        <p v-for="(a,i) in 게시판" :key="i" 누른거 = "i">{{ a.content }}</p>
+        <p v-for="(a,i) in 게시판" :key="i" 누른거 = "i">{{ a }}</p>
         <button @click="모달창열였다 = false"> 닫기 </button>
       </div>
     </div>
-    <div class="main">
-      <a v-for="(a,i) in 게시판" :key="i"><a>{{ a.id }}</a> <a>{{ a.writer }}</a> <a @click="모달창열였다 = true" >{{ a.title }}</a> <a>{{ a.date }}</a> <a>{{ a.view }}</a> <a>{{ a.like }}</a> </a>
-    </div>
+
+<!--    <div class="main">-->
+<!--      <a v-for="(a,i) in 게시판" :key="i"><a @click="모달창열였다 = true">{{ a.id }}</a> <a @click="모달창열였다 = true">{{ a.writer }}</a> <a @click="모달창열였다 = true" >{{ a.title }}</a> <a @click="모달창열였다 = true">{{ a.date }}</a> <a @click="모달창열였다 = true">{{ a.view }}</a> <a @click="모달창열였다 = true">{{ a.like }}</a> </a>-->
+<!--    </div>-->
+
   </div>
 </template>
 
 <script>
 
 import data from './assets/data';
+import search from "@/search";
 
 export default {
   name: 'App',
@@ -45,6 +92,7 @@ export default {
     }
   },
   components: {
+    search
   },
   methods : {
     up(){
@@ -89,6 +137,6 @@ div {
   margin-top: 60px;
 }
 #top {
-  margin-top: 60px;
+  text-align: center;
 }
 </style>
