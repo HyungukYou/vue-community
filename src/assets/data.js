@@ -1,55 +1,53 @@
 module.exports=[
     {
-        id : 0,
-        writer : '홍길동',
-        title: "인생 스토리",
-        content : "하이루",
-        date: "11월 17일",
-        view: "1,000,000",
-        like: 340000
-    },
-    {
-        id : 1,
-        writer : '홍길동',
-        title: "인생 스토리",
-        content : "바이루",
-        date: "11월 17일",
-        view: "1,000,000",
-        like: 340000
-    },
-    {
-        id : 2,
-        writer : '홍길동1',
-        title: "인생 스토리1",
-        content : "스토리",
-        date: "11월 17일",
-        view: "1,000,000",
-        like: 3400000
-    },
-    {
-        id : 3,
-        writer : '홍길동2',
-        title: "인생 스토리2",
-        content : "안녕하세요",
-        date: "11월 17일",
-        view: "1,000,000",
-        like: 34000000
-    },
-    {
-        id : 4,
-        writer : '홍길동3',
-        title: "인생 스토리2",
-        content : "프로젝트",
-        date: "11월 17일",
-        view: "1,000,000",
-        like: 34000000
-    },
-    {
-        id : 5,
-        writer : '홍길동4',
-        title: "인생 스토리4",
-        content : "결혼",
-        date: "11월 17일",
-        view: "1,000,000",
-        like: 34000000
-    }];
+        title : '첫 째 프로젝트 : 허위매물 전문 부동산 앱',
+        content : 'Vue를 이용하면 비누같이 매끈한 앱을 만들 수 있습니다',
+        date : 'September 24, 2021',
+        name : 'hyunguk',
+        view : 100,
+        number : 1
+    },{
+        title : '둘 째 프로젝트 : 오마카세 배달 앱',
+        content : '음식이 아니라 셰프를 직접 배달해드립니다',
+        date : 'October 20, 2020',
+        name : 'hyunguk',
+        view : 100,
+        number : 2
+    },{
+        title : '셋 째 프로젝트 : 현피 앱',
+        content : '거리를 설정하면 가장 가까운 파이터를 소개해드려요! 서로 싸워보세요',
+        date : 'April 24, 2019',
+        name : 'hyunguk',
+        view : 100,
+        number : 3
+    },{
+        title : '셋 째 프로젝트 : 현피 앱',
+        content : '거리를 설정하면 가장 가까운 파이터를 소개해드려요! 서로 싸워보세요',
+        date : 'April 24, 2019',
+        name : 'hyunguk',
+        view : 100,
+        number : 4
+    },{
+        title : '셋 째 프로젝트 : 현피 앱',
+        content : '거리를 설정하면 가장 가까운 파이터를 소개해드려요! 서로 싸워보세요',
+        date : 'April 24, 2019',
+        name : 'hyunguk',
+        view : 100,
+        number : 5
+    },{
+        title : '셋 째 프로젝트 : 현피 앱',
+        content : '거리를 설정하면 가장 가까운 파이터를 소개해드려요! 서로 싸워보세요',
+        date : 'April 24, 2019',
+        name : 'hyunguk',
+        view : 100,
+        number : 6
+    },{
+        title : '셋 째 프로젝트 : 현피 앱',
+        content : '거리를 설정하면 가장 가까운 파이터를 소개해드려요! 서로 싸워보세요',
+        date : 'April 24, 2019',
+        name : 'hyunguk',
+        view : 100,
+        number : 7
+    }
+
+]

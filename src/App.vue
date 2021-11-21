@@ -17,47 +17,7 @@
 
     <search/>
 
-    <table class="table">
-      <thead>
-      <tr>
-        <th scope="col">순번</th>
-        <th scope="col">제목</th>
-        <th scope="col">작성자</th>
-        <th scope="col">작성일</th>
-        <th scope="col">조회수</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry the Bird</td>
-        <td>@mdo</td>
-        <td>@twitter</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>Larry the Bird</td>
-        <td>@mdo</td>
-        <td>@twitter</td>
-        <td>@mdo</td>
-      </tr>
-      </tbody>
-    </table>
+    <List :게시판="게시판" />
 
     <div class="black-bg" v-if="모달창열였다==true">
       <div class="white-bg">
@@ -77,6 +37,7 @@
 
 import data from './assets/data';
 import search from "@/search";
+import List from "@/components/List";
 
 export default {
   name: 'App',
@@ -92,6 +53,7 @@ export default {
     }
   },
   components: {
+    List,
     search
   },
   methods : {
@@ -126,7 +88,7 @@ div {
 .white-bg {
   width: 100%; background: white;
   border-radius: 8px;
-  padding: 20px;
+  padding: 50px;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
